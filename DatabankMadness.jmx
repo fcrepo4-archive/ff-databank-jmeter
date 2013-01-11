@@ -230,7 +230,7 @@
         </HTTPSamplerProxy>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
-          <stringProp name="WhileController.condition">${TEST_ITEM_PATH}!=&lt;EOF&gt;</stringProp>
+          <stringProp name="WhileController.condition">${__javaScript(${TEST_ITEM_PATH}!=&lt;EOF&gt;)}</stringProp>
         </WhileController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add Item from files.txt" enabled="true">
@@ -277,7 +277,7 @@
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <stringProp name="shareMode">All threads</stringProp>
-            <boolProp name="stopThread">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
             <stringProp name="variableNames">TEST_ITEM_PATH</stringProp>
           </CSVDataSet>
           <hashTree/>
@@ -320,7 +320,7 @@
               <bytes>true</bytes>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">/home/ruckus/dev/projects/ff/ff-databank-jmeter/result.txt</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
