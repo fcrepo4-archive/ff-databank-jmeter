@@ -230,7 +230,7 @@
         </HTTPSamplerProxy>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
-          <stringProp name="WhileController.condition">${TEST_ITEM_PATH}</stringProp>
+          <stringProp name="WhileController.condition">${TEST_ITEM_PATH}!=&lt;EOF&gt;</stringProp>
         </WhileController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add Item from files.txt" enabled="true">
