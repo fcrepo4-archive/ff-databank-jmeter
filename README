@@ -1,0 +1,9 @@
+How to use this JMeter Project
+==============================
+
+1) Clone the project, fire up Databank and JMeter and load the DatabankMadness.jmx into JMeter
+2) Create a folder called data
+3) Download the test data set from http://www.edrm.net/resources/data-sets/edrm-file-format-data-set and extract the contents into the data directory
+4) Adjust the variables of the "Databank Madness" Test Plan according to your RDFDatabank installation
+5) Run the Test Plan.
+
