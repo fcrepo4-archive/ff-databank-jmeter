@@ -27,6 +27,11 @@
             <stringProp name="Argument.value"></stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="RESULT_FILE_PATH" elementType="Argument">
+            <stringProp name="Argument.name">RESULT_FILE_PATH</stringProp>
+            <stringProp name="Argument.value">/home/ruckus/dev/projects/ff/ff-databank-jmeter/results.txt</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -314,7 +319,7 @@
               <bytes>true</bytes>
             </value>
           </objProp>
-          <stringProp name="filename">/home/ruckus/dev/projects/ff/ff-databank-jmeter/result.txt</stringProp>
+          <stringProp name="filename">${RESULT_FILE_PATH}</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
